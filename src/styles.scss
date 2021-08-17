@@ -21,11 +21,18 @@ body.dark {
   color: var(--dark-color);
 }
 
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 .navbar {
-  margin-top: 1rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
+  padding: 1rem;
 
   a {
     list-style: none;
@@ -53,14 +60,16 @@ body.dark {
 }
 
 .home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5rem;
+  display: grid;
+  place-content: center;
+  flex: 1;
+  height: 100%;
+  margin-top: 3rem;
 
   #avatar-div {
     text-align: center;
 
+    place-items: center;
     #avatar {
       border: none;
       border-radius: 100%;
@@ -92,13 +101,14 @@ body.dark {
 
 .footer {
   text-align: center;
-  position: relative;
-  display: flex;
+  display: grid;
   align-content: center;
   justify-content: center;
   margin-top: 9.2rem;
+  margin-bottom: 3rem;
 
   .social-links {
+    text-align: center;
     font-size: 2.7rem;
   }
 }

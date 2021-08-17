@@ -4,7 +4,7 @@ import { Footer } from '../components/Footer';
 
 export function Home() {
   return (
-    <div>
+    <>
       <Navbar />
       <main className="home">
         <div>
@@ -18,11 +18,13 @@ export function Home() {
           <h2 className="title text-center">Hi 👋, I'm Lucas</h2>
           <p className="subtitle">
             A person who likes to contribute.
-            <img
-              alt="RUSB"
-              src="https://github.com/drethenrain/drethenrain/raw/main/resources/rusb.png"
-              width="22px"
-            />
+            <span>
+              <img
+                alt="RUSB"
+                src="https://github.com/drethenrain/drethenrain/raw/main/resources/rusb.png"
+                width="22px"
+              />
+            </span>
           </p>
           <p className="description text-center">
             A{' '}
@@ -37,6 +39,6 @@ export function Home() {
         </div>
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
