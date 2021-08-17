@@ -21,21 +21,27 @@ body.dark {
   color: var(--dark-color);
 }
 
-.nav {
+.navbar {
   margin-top: 1rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
 
-.nav-list,
-a {
-  list-style: none;
-  text-decoration: none;
-}
-.nav-list li {
-  display: inline-block;
-  padding: 0 10px 0 10px;
+  a {
+    list-style: none;
+    text-decoration: none;
+  }
+
+  li {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+  }
+
+  #change-theme {
+    cursor: pointer;
+    font-size: 1.4rem;
+    position: relative;
+  }
 }
 
 :visited {
@@ -46,30 +52,42 @@ a {
   color: var(--dark-color);
 }
 
-#change-theme {
-  cursor: pointer;
-  font-size: 1.4rem;
-  position: relative;
-}
-
-.title {
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 8px;
-}
-.subtitle {
-  font-size: 1.25rem;
-}
-
-.center {
-  text-align: center;
-}
-
 .home {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 5rem;
+
+  #avatar-div {
+    text-align: center;
+
+    #avatar {
+      border: none;
+      border-radius: 100%;
+      width: 125px;
+      margin-bottom: 1rem;
+      align-items: center;
+    }
+  }
+
+  .title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+
+  .text-center {
+    text-align: center;
+  }
 }
 
 .footer {
@@ -78,17 +96,9 @@ a {
   display: flex;
   align-content: center;
   justify-content: center;
-  margin-top: 11rem;
-}
+  margin-top: 9.2rem;
 
-.social-links {
-  font-size: 2.7rem;
-}
-
-#avatar {
-  margin-left: 5.5rem;
-  border: none;
-  border-radius: 100%;
-  width: 125px;
-  margin-bottom: 1rem;
+  .social-links {
+    font-size: 2.7rem;
+  }
 }

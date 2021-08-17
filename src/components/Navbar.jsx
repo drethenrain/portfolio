@@ -4,9 +4,9 @@ import { ThemeSwitch } from './ThemeSwitch';
 
 export function Navbar() {
   return (
-    <nav className="nav">
+    <nav className="navbar">
       drethenrain
-      <ul className="nav-list">
+      <ul>
         <li>
           <Link to="#">projects</Link>
         </li>

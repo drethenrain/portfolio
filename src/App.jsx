@@ -1,7 +1,7 @@
 import { BrowserRouter, Route } from 'react-router-dom';
-
 import { Home } from './pages/Home';
-import './styles.css';
+import '@iconscout/unicons/css/line.css';
+import './styles.scss';
 function App() {
   return (
     <BrowserRouter>
