@@ -1,8 +1,20 @@
+import { useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
+
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 
+import audio from '../assets/luangameplays.mp3';
+
 export function Home() {
+  const [clicks, setClicks] = useState(0);
+  if (clicks === 30)
+    return (
+      <audio autoPlay>
+        <source src={audio} type="audio/mp3" />
+      </audio>
+    );
+
   return (
     <>
       <Navbar />
@@ -18,7 +30,11 @@ export function Home() {
           <h2 className="title text-center">Hi 👋, I'm Lucas</h2>
           <p className="subtitle">
             A person who likes to contribute.
-            <span>
+            <span
+              onClick={() => {
+                setClicks(clicks + 1);
+              }}
+            >
               <img
                 alt="RUSB"
                 src="https://github.com/drethenrain/drethenrain/raw/main/resources/rusb.png"
