@@ -51,11 +51,11 @@ body.dark {
   }
 }
 
-:visited {
+a {
   color: var(--light-color);
 }
 
-.dark :visited {
+.dark a {
   color: var(--dark-color);
 }
 
