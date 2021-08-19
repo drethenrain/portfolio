@@ -7,7 +7,7 @@ export function Navbar() {
       drethenrain
       <ul>
         <li>
-          <Link to="#">projects</Link>
+          <Link to="/uepa">projects</Link>
         </li>
       </ul>
       <ThemeSwitch />

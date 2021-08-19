@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 
-import { Navbar } from '../components/Navbar';
-import { Footer } from '../components/Footer';
+import { Navbar } from '../../components/Navbar';
+import { Footer } from '../../components/Footer';
 
-import luan1 from '../assets/luangameplays.mp3';
-import luan2 from '../assets/luangameplays2.mp3';
+import luan1 from '../../assets/luangameplays.mp3';
+import luan2 from '../../assets/luangameplays2.mp3';
+
+import './style.scss';
 
 export function Home() {
   const [clicksLuan1, setClicksLuan1] = useState(0);
