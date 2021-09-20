@@ -1,3 +1,5 @@
+import React from 'react';
+
 import bom from '../../assets/video.mp4';
 
 export function Uepa() {

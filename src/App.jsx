@@ -1,8 +1,8 @@
+import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+
 import { Home } from './pages/Home/Home';
 import { Uepa } from './pages/Uepa/Uepa';
-
-import '@iconscout/unicons/css/line.css';
 
 import './styles.scss';
 

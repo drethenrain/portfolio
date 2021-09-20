@@ -1,4 +1,7 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+
+import sun from '../assets/sun.svg';
+import moon from '../assets/moon.svg';
 
 export function ThemeSwitch() {
   const [theme, setTheme] = useState(false);
@@ -22,7 +25,7 @@ export function ThemeSwitch() {
 
   return (
     <span id="change-theme" onClick={() => setTheme(!theme)}>
-      <i className={`uil ${theme ? 'uil-moon' : 'uil-sun'} `}></i>
+      <img src={theme ? sun : moon} />
     </span>
   );
 }

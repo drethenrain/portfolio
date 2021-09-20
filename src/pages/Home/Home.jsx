@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 
 import { Navbar } from '../../components/Navbar';
