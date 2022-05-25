@@ -24,6 +24,7 @@ body.dark {
 #root {
   display: flex;
   min-height: 100vh;
+  min-width: 100vh;
   flex-direction: column;
 }
 
@@ -33,6 +34,9 @@ body.dark {
   align-items: center;
   text-align: center;
   padding: 1rem;
+  margin: 0.5rem;
+
+  font-size: 1.2rem;
 
   a {
     list-style: none;
@@ -46,8 +50,9 @@ body.dark {
 
   #change-theme {
     cursor: pointer;
-    width: 22px;
-    height: 22px;
+    width: 26px;
+    height: 26px;
+    margin-right: 1.8rem;
     position: relative;
   }
 }
